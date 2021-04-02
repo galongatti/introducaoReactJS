@@ -4,6 +4,8 @@ import "./index.css";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
+import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 import Card from "./components/layout/Card";
 
@@ -13,7 +15,15 @@ function App() {
 			<h1>Fundamentos React</h1>
 
 			<div className="Cards">
-				<Card titulo="#03 - Desafio aleatório" color="#011f4b">
+				<Card titulo="#04 - Componente com filhos" color="#6497b1">
+					<Familia sobrenome="Ferreira">
+						<FamiliaMembro nome="Pedro" />
+						<FamiliaMembro nome="Ana" />
+						<FamiliaMembro nome="Caio" />
+					</Familia>
+				</Card>
+
+				<Card titulo="#03 - Desafio aleatório" color="#005b96">
 					<NumeroAleatorio min={1} max={10} />
 					<NumeroAleatorio min={1} max={10} />
 				</Card>
@@ -22,7 +32,7 @@ function App() {
 					<ComParametro titulo="titulo" subtitulo="subtitulo" />
 				</Card>
 
-				<Card titulo="#01 - Compoenente sem parametro" color="#005b96">
+				<Card titulo="#01 - Compoenente sem parametro" color="#011f4b">
 					<Primeiro />
 				</Card>
 			</div>
