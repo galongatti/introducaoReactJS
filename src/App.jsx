@@ -7,6 +7,7 @@ import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 import Card from "./components/layout/Card";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
@@ -15,8 +16,10 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
-
 			<div className="Cards">
+				<Card titulo="#07 - Renderização condicional" color="#005b96">
+					<ParOuImpar valor={7} />
+				</Card>
 				<Card titulo="#06 - Desafio repetição" color="#6497b1">
 					<TabelaProdutos />
 				</Card>
@@ -38,11 +41,11 @@ function App() {
 					<NumeroAleatorio min={1} max={10} />
 				</Card>
 
-				<Card titulo="#02 - Compoenente com parametro" color="#03396c">
+				<Card titulo="#02 - Componente com parametro" color="#03396c">
 					<ComParametro titulo="titulo" subtitulo="subtitulo" />
 				</Card>
 
-				<Card titulo="#01 - Compoenente sem parametro" color="#011f4b">
+				<Card titulo="#01 - Componente sem parametro" color="#011f4b">
 					<Primeiro />
 				</Card>
 			</div>
