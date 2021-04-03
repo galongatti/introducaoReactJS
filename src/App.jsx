@@ -8,6 +8,7 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 import Card from "./components/layout/Card";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
@@ -19,6 +20,7 @@ function App() {
 			<div className="Cards">
 				<Card titulo="#07 - Renderização condicional" color="#005b96">
 					<ParOuImpar valor={7} />
+					<UsuarioInfo usuario={{ nome: "Gabriel" }} />
 				</Card>
 				<Card titulo="#06 - Desafio repetição" color="#6497b1">
 					<TabelaProdutos />
