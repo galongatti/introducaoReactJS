@@ -12,12 +12,16 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import Card from "./components/layout/Card";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
+				<Card titulo="#09 - Comunicação indireta " color="#011f4b">
+					<IndiretaPai />
+				</Card>
 				<Card titulo="#08 - Comunicação direta " color="#03396c">
 					<DiretaPai />
 				</Card>
