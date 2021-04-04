@@ -13,12 +13,16 @@ import Card from "./components/layout/Card";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
 
 function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
+				<Card titulo="#10 - Componente controaldo " color="#03396c">
+					<Input />
+				</Card>
 				<Card titulo="#09 - Comunicação indireta " color="#011f4b">
 					<IndiretaPai />
 				</Card>
