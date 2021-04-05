@@ -14,12 +14,19 @@ import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
+				<Card
+					titulo="#11 - Contador - Código baseado em classe "
+					color="#011f4b"
+				>
+					<Contador numeroInicial={10} />
+				</Card>
 				<Card titulo="#10 - Componente controaldo " color="#03396c">
 					<Input />
 				</Card>
