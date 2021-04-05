@@ -27,7 +27,7 @@ function App() {
 				>
 					<Contador numeroInicial={10} />
 				</Card>
-				<Card titulo="#10 - Componente controaldo " color="#03396c">
+				<Card titulo="#10 - Componente controlado " color="#03396c">
 					<Input />
 				</Card>
 				<Card titulo="#09 - Comunicação indireta " color="#011f4b">
