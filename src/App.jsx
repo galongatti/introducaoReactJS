@@ -15,12 +15,19 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
 import Contador from "./components/contador/Contador";
+import Contador2 from "./components/contador/Contador2";
 
 function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
+				<Card
+					titulo="#12 - Contador - Código baseado em classe "
+					color="#011f4b"
+				>
+					<Contador2 numeroInicial={10} />
+				</Card>
 				<Card
 					titulo="#11 - Contador - Código baseado em classe "
 					color="#011f4b"

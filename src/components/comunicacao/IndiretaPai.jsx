@@ -6,7 +6,7 @@ function IndiretaPai(props) {
 	let [idade, setIdade] = useState(0);
 	let [nerd, setNerd] = useState(false);
 
-	function fornecerInformações(nome, idade, nerd) {
+	function fornecerInformacoes(nome, idade, nerd) {
 		setNome(nome);
 		setIdade(idade);
 		setNerd(nerd);
@@ -19,7 +19,7 @@ function IndiretaPai(props) {
 				<span>{idade} </span>
 				<span>{nerd ? "Verdadeiro" : "Falso"} </span>
 			</div>
-			<InderetaFilho quandoClicar={fornecerInformações}></InderetaFilho>
+			<InderetaFilho quandoClicar={fornecerInformacoes}></InderetaFilho>
 		</div>
 	);
 }
